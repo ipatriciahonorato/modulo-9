@@ -1,0 +1,13 @@
+pyproject.toml
+setup.cfg
+setup.py
+pyTdd/__init__.py
+pyTdd.egg-info/PKG-INFO
+pyTdd.egg-info/SOURCES.txt
+pyTdd.egg-info/dependency_links.txt
+pyTdd.egg-info/not-zip-safe
+pyTdd.egg-info/requires.txt
+pyTdd.egg-info/top_level.txt
+pyTdd/simulador/__init__.py
+pyTdd/simulador/publisher.py
+pyTdd/simulador/subscriber.py
