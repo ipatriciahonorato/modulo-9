@@ -73,7 +73,7 @@ Para executar os testes automatizados e validar o funcionamento do simulador, us
 Este comando busca e executa todos os testes dentro do diretório especificado, garantindo que todas as funcionalidades do simulador sejam testadas conforme os critérios estabelecidos.
 
 ## Vídeo demonstrativo
-[![O vídeo a seguir apresenta a execução dos testes desse projeto](https://i3.ytimg.com/vi/XoXG-HeK4d0/maxresdefault.jpg)](https://youtu.be/XoXG-HeK4d)
+[![O vídeo a seguir apresenta a execução dos testes desse projeto](https://i3.ytimg.com/vi/XoXG-HeK4d0/maxresdefault.jpg)](https://youtu.be/XoXG-HeK4d0)
 
 ## Referências e Material de Estudo
 - Eclipse Paho MQTT Python Client: [Documentação Oficial](https://eclipse.dev/paho/index.php?page=clients/python/index.php)
