@@ -103,9 +103,33 @@ Este projeto inclui duas funcionalidades principais: a simulação de dados do s
     client.loop_forever()
    
 Estas funcionalidades formam a base do simulador de dispositivos IoT, permitindo a simulação de dados de um sensor SPS30 e a comunicação desses dados através do protocolo MQTT, demonstrando a aplicabilidade do projeto em ambientes de teste e desenvolvimento
+
+## Execução do Simulador de Dispositivos IoT
+
+### Iniciando o Broker MQTT
+- **Mosquitto:** Certifique-se de que o Mosquitto esteja instalado em seu sistema. Para iniciar o Mosquitto com o arquivo de configuração personalizado, use o comando:
+
+`/meu_workspace/modulo-9/ponderada-1/conf_mosquitto`
+
+`mosquitto -c mosquitto.conf`
+
+### Executando o Simulador
+- **Publicador (publisher.py)**: Este script gera e publica dados simulados do sensor SPS30 em um tópico MQTT específico. Para executá-lo, navegue até o diretório do projeto e use o comando:
+
+`python3 publisher.py
+`
+- **Subscritor (subscriber.py):** Este script se inscreve no tópico sps30/topic e exibe as mensagens recebidas. Para iniciar o subscritor, abra um novo terminal, navegue até o diretório do projeto e execute:
+
+
+`python3 subscriber.py
+`
+### Verificação de Funcionamento
+- **Publicador:** Verifique o terminal onde o publisher.py está sendo executado para garantir que as mensagens estejam sendo publicadas regularmente.
+- **Subscritor:** No terminal do subscriber.py, confirme que as mensagens estão sendo recebidas e exibidas corretamente.
+
 ## Demonstração do projeto
 
-O vídeo a seguir apresenta o funcionamento do simulador desenvolvido nesse projeto: [link]()
+[![O vídeo a seguir apresenta o simulador desenvolvido para esse projeto](https://i3.ytimg.com/vi/Z0yaUPNVQaA/maxresdefault.jpg)](https://youtu.be/Z0yaUPNVQaA)
 
 ## Referências
 Datasheet do Sensor SPS30: [SPS30 Datasheet](https://www.alldatasheet.com/view.jsp?Searchword=Sps30%20datasheet&gad_source=1&gclid=CjwKCAiA7t6sBhAiEiwAsaieYhkbnMeIYLDdvsNp4culvHNBwikKTM4QvT16S8ImRQTC9o1Dl6LQ-BoCe8cQAvD_BwE)
