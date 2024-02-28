@@ -44,14 +44,14 @@ Este projeto inclui duas funcionalidades principais: a simulação de dados do s
 
 1. **Simulação de Dados do Sensor SPS30:** O arquivo `publisher.py` contém a lógica para gerar dados simulados que imitam as leituras de um sensor SPS30 real. Utiliza a biblioteca `random` para gerar valores dentro de um intervalo específico, representando as concentrações de massa (µg/m³) e número (#/cm³) de partículas.
 
-    import random
+    `import random`
     
-    def generate_sps30_data():
+    `def generate_sps30_data():
         # Geração de valores simulados para concentrações de massa
         pm1 = random.uniform(0, 50)  # PM1.0
         pm2_5 = random.uniform(5, 75)  # PM2.5
         pm4 = random.uniform(5, 100)  # PM4.0
-        pm10 = random.uniform(10, 120)  # PM10
+        pm10 = random.uniform(10, 120)  # PM10`
     
         # Geração de valores simulados para concentrações de número
         pm0_5_num = random.uniform(0, 1000)  # PM0.5
