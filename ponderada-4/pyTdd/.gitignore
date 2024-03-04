@@ -1,0 +1,6 @@
+venv
+__pycache__
+config.ini
+.mypy_cache
+.pytest_cache
+pyTdd.egg-info
