@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - 'main'
-      
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -17,12 +17,16 @@ jobs:
       MQTT_USERNAME: ${{ secrets.MQTT_USERNAME }}
       MQTT_PASSWORD: ${{ secrets.MQTT_PASSWORD }}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.10'
     - name: Install dependencies from setup.cfg
       run: |
+        pip install --upgrade pip
         pip install .
-      
+    - name: Run tests
+      run: pytest
