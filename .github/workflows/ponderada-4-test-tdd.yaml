@@ -16,11 +16,12 @@ jobs:
       MQTT_CLIENT_ID_SUBSCRIBER: ${{ secrets.MQTT_CLIENT_ID_SUBSCRIBER }}
       MQTT_USERNAME: ${{ secrets.MQTT_USERNAME }}
       MQTT_PASSWORD: ${{ secrets.MQTT_PASSWORD }}
+      
     steps:
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0 
-        
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
