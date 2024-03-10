@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - 'main'
-    paths:
-      - 'ponderada-4/pyTdd/**'
       
 jobs:
   test:
@@ -24,8 +22,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.10'
-    - name: Install dependencies
+    - name: Install dependencies from setup.cfg
       run: |
-        pip install -r requirements.txt
-    - name: Run tests
-      run: pytest      
+        pip install .
+      
