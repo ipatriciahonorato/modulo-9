@@ -2,20 +2,16 @@ import unittest
 from paho.mqtt import client as mqtt_client
 import time
 import ssl
-import configparser
+import os
 
-# Lendo as configurações do arquivo
-config = configparser.ConfigParser()
-config.read('config.ini')
-
-# Configuração para conexão com o HiveMQ utilizando as informações do arquivo
-broker = config.get('mqtt', 'broker')
-port = config.getint('mqtt', 'port')
-topic = config.get('mqtt', 'topic')
-client_id_publisher = config.get('mqtt', 'client_id_publisher')
-client_id_subscriber = config.get('mqtt', 'client_id_subscriber')
-username = config.get('mqtt', 'username')
-password = config.get('mqtt', 'password')
+# Configuração para conexão com o HiveMQ utilizando variáveis de ambiente
+broker = os.getenv("MQTT_BROKER")
+port = int(os.getenv("MQTT_PORT"))
+topic = os.getenv("MQTT_TOPIC")
+client_id_publisher = os.getenv("MQTT_CLIENT_ID_PUBLISHER")
+client_id_subscriber = os.getenv("MQTT_CLIENT_ID_SUBSCRIBER")
+username = os.getenv("MQTT_USERNAME")
+password = os.getenv("MQTT_PASSWORD")
 
 
 def tls_set(client):

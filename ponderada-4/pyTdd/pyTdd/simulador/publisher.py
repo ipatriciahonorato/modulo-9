@@ -2,16 +2,13 @@ import paho.mqtt.client as mqtt
 import time
 import random
 import ssl
-import configparser
+import os
 
-# Carrega configurações do arquivo
-config = configparser.ConfigParser()
-config.read('config.ini')
-
-broker = config['mqtt']['broker']
-port = int(config['mqtt']['port'])
-username = config['mqtt']['username']
-password = config['mqtt']['password']
+# Carrega configurações de variáveis de ambiente
+broker = os.getenv("MQTT_BROKER")
+port = int(os.getenv("MQTT_PORT"))
+username = os.getenv("MQTT_USERNAME")
+password = os.getenv("MQTT_PASSWORD")
 
 # Configuração do cliente
 client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, "python_publisher")
@@ -48,7 +45,6 @@ def generate_sps30_data():
     return message
 
 
-# Publicação de mensagens MQTT
 try:
     while True:
         message = generate_sps30_data()
