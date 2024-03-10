@@ -6,34 +6,26 @@ on:
       - 'main'
     paths:
       - 'ponderada-4/pyTdd/**'
-
+      
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ['3.9', '3.10']
-    defaults:
-      run:
-        shell: bash
-        working-directory: './ponderada-4/pyTdd'
+    env:
+      MQTT_BROKER: ${{ secrets.MQTT_BROKER }}
+      MQTT_PORT: ${{ secrets.MQTT_PORT }}
+      MQTT_TOPIC: ${{ secrets.MQTT_TOPIC }}
+      MQTT_CLIENT_ID_PUBLISHER: ${{ secrets.MQTT_CLIENT_ID_PUBLISHER }}
+      MQTT_CLIENT_ID_SUBSCRIBER: ${{ secrets.MQTT_CLIENT_ID_SUBSCRIBER }}
+      MQTT_USERNAME: ${{ secrets.MQTT_USERNAME }}
+      MQTT_PASSWORD: ${{ secrets.MQTT_PASSWORD }}
     steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: Run tests
-        env:
-          MQTT_BROKER: ${{ secrets.MQTT_BROKER }}
-          MQTT_PORT: ${{ secrets.MQTT_PORT }}
-          MQTT_TOPIC: ${{ secrets.MQTT_TOPIC }}
-          MQTT_CLIENT_ID_PUBLISHER: ${{ secrets.MQTT_CLIENT_ID_PUBLISHER }}
-          MQTT_CLIENT_ID_SUBSCRIBER: ${{ secrets.MQTT_CLIENT_ID_SUBSCRIBER }}
-          MQTT_USERNAME: ${{ secrets.MQTT_USERNAME }}
-          MQTT_PASSWORD: ${{ secrets.MQTT_PASSWORD }}
-        run: pytest
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10'
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Run tests
+      run: pytest      
