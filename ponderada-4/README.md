@@ -37,8 +37,8 @@ MQTT_PORT=8883
 MQTT_TOPIC=sps30/topic
 MQTT_CLIENT_ID_PUBLISHER=python_publisher_test
 MQTT_CLIENT_ID_SUBSCRIBER=python_subscriber_test
-MQTT_USERNAME=patriciahonorato
-MQTT_PASSWORD=Bazinga12
+MQTT_USERNAME= id username
+MQTT_PASSWORD= password
 ```
 - No GitHub: Adicione as mesmas variáveis de ambiente como Secrets no seu repositório GitHub para uso no GitHub Actions.
 
