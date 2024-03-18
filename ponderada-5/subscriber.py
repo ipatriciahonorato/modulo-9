@@ -4,7 +4,6 @@ import paho.mqtt.client as mqtt
 import ssl
 from pymongo import MongoClient
 
-
 # Acessa as configurações a partir das variáveis de ambiente
 broker = os.getenv("MQTT_BROKER")
 port = int(os.getenv("MQTT_PORT"))

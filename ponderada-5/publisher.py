@@ -22,7 +22,7 @@ client.username_pw_set(username, password)
 client.connect(broker, port, 60)
 
 def generate_sps30_data():
-    # Geração de valores simulados para concentrações de massa e número
+    # Geração de valores simulados para concentrações de massa e número (dicionário)
     data = {
         'PM1': random.uniform(0, 50),  # PM1.0
         'PM2_5': random.uniform(5, 75),  # PM2.5
