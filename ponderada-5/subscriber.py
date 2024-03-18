@@ -4,17 +4,17 @@ import paho.mqtt.client as mqtt
 import ssl
 from pymongo import MongoClient
 
+
 # Acessa as configurações a partir das variáveis de ambiente
 broker = os.getenv("MQTT_BROKER")
 port = int(os.getenv("MQTT_PORT"))
 username = os.getenv("MQTT_USERNAME")
 password = os.getenv("MQTT_PASSWORD")
 topic = os.getenv("MQTT_TOPIC")
-
 # Conectar ao MongoDB
 mongo_client = MongoClient('mongodb://localhost:27017/')
-db = mongo_client['meu_banco_de_dados']  # Altere para o nome do seu banco de dados
-colecao = db['minha_colecao']  # Altere para o nome da sua coleção
+db = mongo_client['ponderada_4']  # Altere para o nome do seu banco de dados
+colecao = db['sensor']  # Altere para o nome da sua coleção
 
 def on_message(client, userdata, message):
     """Callback quando uma mensagem é recebida."""
