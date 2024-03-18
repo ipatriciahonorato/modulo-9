@@ -34,7 +34,7 @@ jobs:
       working-directory: ./ponderada-4/pyTdd
 
     - name: Clean up Python bytecode
-      run: find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
-    
+      run: find ./ponderada-4/pyTdd | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
+
     - name: Run tests
-      run: pytest
+      run: pytest ponderada-4/pyTdd/tests
