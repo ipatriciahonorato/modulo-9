@@ -128,6 +128,7 @@ Este projeto atende aos critérios estabelecidos na descrição da ponderada, co
 
 ## Demonstração do Projeto
 
+[![O vídeo a seguir apresenta a execução dos testes e integração desse projeto](https://i3.ytimg.com/vi/VesROpWxc5Y/maxresdefault.jpg)](https://youtu.be/VesROpWxc5Y)
 
 
 
