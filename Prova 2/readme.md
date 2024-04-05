@@ -84,9 +84,9 @@ https://youtu.be/CzFDrgyhxMY
 
 [![O vídeo a seguir apresenta a integração desse projeto](https://i3.ytimg.com/vi/CzFDrgyhxMY/maxresdefault.jpg)](https://youtu.be/CzFDrgyhxMY)
 
-Tópico:
+Imagem Tópico qualidadeAr:
 
-(topico)[]
+[topico](https://github.com/ipatriciahonorato/modulo-9/blob/main/Prova%202/topico.png)
 
 
 
