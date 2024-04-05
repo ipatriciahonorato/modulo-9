@@ -72,7 +72,7 @@ Utilize o comando:
 ``python3 producer-kakfa.py``
 
 
-## Visuazaliação do Projeto
+## Visualização do Projeto
 
 Os dados podem ser observados no terminal, Kafka e também no arquivo sensor_data.txt.
 
