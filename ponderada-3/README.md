@@ -1,6 +1,7 @@
 # Relatório de Simulação de Ataques usando MQTT
 
-**Desenvolvido por:** Patricia Honorato Moreira e Luiz Fernando da Silva Borges
+**Desenvolvido por:** Patricia Honorato Moreira, Luiz Fernando da Silva Borges e Alysson C.C. Cordeiro
+
 
 # Configuração do Ambiente
 
