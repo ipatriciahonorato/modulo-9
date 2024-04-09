@@ -101,9 +101,11 @@ Observe o terminal do subscriber. As mensagens enviadas pelo publisher deverão 
 
 Acesse a interface da Confluent Cloud e do HiveMQ Cloud para visualizar métricas e logs que confirmam o fluxo de mensagens.
 
-# Demonstração
+## Demonstração
 
-O Vídeo a seguir apresenta a execução do projeto e procedimentos de testes realizados:
+O Vídeo abaixo apresenta a execução do projeto e procedimentos de testes realizados:
+
+[![O vídeo a seguir apresenta a integração desse projeto](https://i3.ytimg.com/vi/MCJ4rlQKhQE/maxresdefault.jpg)](https://youtu.be/MCJ4rlQKhQE)
 
 
 
