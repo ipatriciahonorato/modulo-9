@@ -41,8 +41,8 @@ Para aprimorar a experiência do usuário e fornecer feedback visual durante o p
 
 O projeto levou 5.774 (346.45 segundos) minutos para ser executado, conforme mostrado abaixo:
 
-[img 1](../ponderada_7/img/WhatsApp%20Image%202024-04-08%20at%2020.24.23.jpeg)
-[img 2](../ponderada_7/img/WhatsApp%20Image%202024-04-08%20at%2020.24.24.jpeg)
+![img 1](../ponderada_7/img/WhatsApp%20Image%202024-04-08%20at%2020.24.23.jpeg)
+![img 2](../ponderada_7/img/WhatsApp%20Image%202024-04-08%20at%2020.24.24.jpeg)
 
 
 
