@@ -30,12 +30,12 @@ cd modulo-9/ponderada_8
 
 ## Processamento de dados
 
-A chave para solucionar este desafio está na eficiência da leitura e processamento dos dados. Utilizei a função ```get_data_with_txt``` para realizar a leitura dos dados de medição. A abertura do arquivo em modo binário (rb) é uma estratégia crucial para minimizar o impacto no desempenho durante a leitura das linhas.
+A chave para solucionar este desafio está na eficiência da leitura e processamento dos dados. Utilizei a função ```get_data_with_txt``` para realizar a leitura dos dados de medição. A abertura do arquivo em modo binário (rb) é uma estratégia para minimizar o impacto no desempenho durante a leitura das linhas.
 
 Durante a leitura, realizei a separação dos dados - *nome da estação e temperatura* - e os agreguei em um dicionário. Neste, a chave é o nome da estação e o valor é um array que contém, em ordem: a temperatura mínima, a temperatura máxima, a soma de todas as temperaturas registradas para a estação e a quantidade de medições realizadas. Após a leitura completa, calculei a temperatura média para cada estação usando a soma total das temperaturas e a quantidade de medições.
 
 ## Ferramentas Auxiliares
-Para aprimorar a experiência do usuário e fornecer feedback visual durante o processamento, utizilei a biblioteca ```tqdm```. Ela gera uma barra de progresso, facilitando o acompanhamento do processo de leitura dos dados.
+Para fornecer feedback visual durante o processamento, utilizei a biblioteca ```tqdm```. Ela gera uma barra de progresso, facilitando o acompanhamento do processo de leitura dos dados.
 
 # Tempo de execução
 
