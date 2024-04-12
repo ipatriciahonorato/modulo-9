@@ -1,4 +1,4 @@
-## Nomes: Patricia Honorato Moreira e Luiz Fernando da Silva Borges
+## Nomes: Patricia Honorato Moreira, Luiz Fernando da Silva Borges e Alysson C.C. Cordeiro.
 
 ## Ponderada 2 - Professor Rafael - Avaliação de Segurança do Projeto
 
